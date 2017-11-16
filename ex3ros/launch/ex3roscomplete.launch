@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<launch>
+	<!--carrega el parametre desitjat -->
+	<group ns = "masteruvic">
+		<rosparam command="load" file="$(find ex3ros)param.yaml" />
+
+	</group>
+
+	<node name="rviz" pkg="rviz" type="rviz"/>
+
+	<include file="$(find usb_cam)/launch/usb_cam-test.launch"/>
+</launch>

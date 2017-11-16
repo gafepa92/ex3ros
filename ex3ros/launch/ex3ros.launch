@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<launch>
+	<!--carrega el parametre desitjat -->
+	<group ns = "masteruvic">
+		<rosparam command="load" file="$(find ex3ros)param.yaml" />
+
+</ launch>
+
